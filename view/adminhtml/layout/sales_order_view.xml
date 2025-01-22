@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="CSSoft_CheckoutDetails::css/checkout-fields.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="CSSoft\CheckoutDetails\Block\Adminhtml\Order\View\Fields" name="sales_order_view_fields" template="order/view/fields.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="cssoft-checkout-fields" xsi:type="array">
+                                <item name="component" xsi:type="string">CSSoft_CheckoutDetails/js/order-fields</item>
+                                <item name="provider" xsi:type="string">cssoftCheckoutFields</item>
+                                <item name="children" xsi:type="array"></item>
+                            </item>
+                            <item name="cssoftCheckoutFields" xsi:type="array">
+                                <item name="component" xsi:type="string">uiComponent</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="CSSoft_CheckoutDetails::checkoutfields"
+            title="Checkout Fields"
+            module="CSSoft_CheckoutDetails"
+            sortOrder="330"
+            parent="CSSoft_OrderCheckout::checkout"
+            action="checkoutfields/field"
+            resource="CSSoft_CheckoutDetails::checkoutfields"/>
+    </menu>
+</config>
